@@ -18,7 +18,7 @@ namespace Five_Word_Five_Letters
             Stopwatch stopwatch = Stopwatch.StartNew();
 
             // File reading
-            string filePath = "C:\\Users\\HFGF\\Desktop\\Five Word Five Letters\\words_alpha.txt";
+            string filePath = "C:\\Users\\HFGF\\source\\repos\\Five Word Five Letters\\Five Word Five Letters\\words_alpha.txt";
             string[] fileData = File.ReadAllLines(filePath);
 
             ConcurrentBag<(string word, int bitmask)> validWords = new ConcurrentBag<(string, int)>(); // gemmer ordene og deres bitmask
